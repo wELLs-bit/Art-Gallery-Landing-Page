@@ -1,0 +1,73 @@
+.services-section {
+  background-color: rgb(58, 5, 58);
+  padding: 20px 10px;
+  margin: 30px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  animation: fadeInRight 4s ease forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.service-card {
+  background-color: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+}
+
+.service-card h3 {
+  font-size: 26px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .services-section h2 {
+    font-size: 28px;
+  }
+  .service-card h3 {
+    font-size: 20px;
+  }
+  .service-card p {
+    font-size: 14px;
+  }
+}

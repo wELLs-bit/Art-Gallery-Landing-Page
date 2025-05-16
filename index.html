@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Landing Page</title>
+    <link rel="stylesheet" href="./CSS/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo" id="home">
+          <h1>
+            <a href="#"><span>wELLs</span></a>
+          </h1>
+        </div>
+        <nav class="nav-menu">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#service">Services</a></li>
+          </ul>
+        </nav>
+        <a href="#contact"><button class="nav-button">Contact Us</button></a>
+        <div class="menuopen">
+          <ul>
+            <li class="hamburger"></li>
+            <li class="hamburger"></li>
+            <li class="hamburger"></li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="hero-container" id="home">
+        <div class="hero-text">
+          <h2>The Ultimate</h2>
+          <h1>Collections</h1>
+        </div>
+        <div class="hero-images">
+          <div class="hero-card-img">
+            <img
+              src="/Assets/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="hero-card-img">
+            <img src="/Assets/images/collage 1.avif" alt="" />
+          </div>
+          <div class="hero-card-img">
+            <img src="/Assets//images/collage 2.avif" alt="" />
+          </div>
+          <div class="hero-card-img">
+            <img
+              src="/Assets/images/francesco-bianco-TVsgRyKJDc0-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <div class="hero-card-img">
+            <img
+              src="/Assets/images/jene-stephaniuk-wsVOc34cQ_Q-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="hero-desc">
+          <p class="desc">A World Of Art, At Your Fingertips.</p>
+          <div class="hero-btn">
+            <a href="#gallery"><button>View Collections</button></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <h2>Who We Are</h2>
+        <div class="about-container">
+          <div class="about-content">
+            <h1>Your Canvas, Our Passion.</h1>
+            <p>
+              Welcome to <b>wELLs.Art</b>, a showcase of artistic expression and
+              creativity. <br />
+              We're a team of art enthusiasts dedicated to sharing inspiring
+              works with the world.
+            </p>
+            <p class="paragragh">
+              Discover exquisite artwork designs tailored to elevate your space.
+              <br />
+              Our curated collection features unique pieces from emerging and
+              <br />
+              established artists, ensuring a perfect blend of style,
+              sophistication, <br />
+              and personality to transform your environment.
+            </p>
+            <p>
+              Elevate your space with our expertly curated artwork designs.
+              <br />
+              From contemporary to classic, our diverse collection ensures
+              <br />
+              a perfect match for your unique style, enhancing the beauty <br />
+              and character of your environment.
+            </p>
+            <div class="about-icons">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+          </div>
+          <div class="about-image">
+            <img
+              class="image"
+              src="/Assets/images/elisaveta-bunduche-HQbkDeNIWvo-unsplash.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-container" id="gallery">
+        <h1>wELLs Gallery</h1>
+        <div class="cards">
+          <div class="cards-contents">
+            <h2>Sculpture Gallery</h2>
+            <div class="cards-img">
+              <img
+                src="./Assets/images/sculpture 2.avif"
+                alt=""
+              />
+              <div class="view-more-btn">
+                <button data-type="sculpture">See more photos</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-contents">
+            <h2>Collage Gallery</h2>
+            <div class="cards-img">
+              <img
+                src="/Assets/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg"
+                alt=""
+              />
+              <div class="view-more-btn">
+                <button data-type="collage">See more photos</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards-contents">
+            <h2>Digital Art Gallery</h2>
+            <div class="cards-img">
+              <img src="/Assets/images/digital art 5.avif" alt="" />
+              <div class="view-more-btn">
+                <button data-type="digital">See more photos</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="galleryModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalGallery"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog-section" id="blog">
+        <h2>Latest from Our Blog</h2>
+        <div class="blog-posts">
+          <div class="blog-card">
+            <img
+              src="/Assets/images/Abstract pic.avif"
+              alt="Blog Image 1"
+            />
+            <div class="blog-content">
+              <h3>The Beauty of Abstract Expressionism</h3>
+              <p>
+                Explore how abstract art shapes our emotions and perceptions in
+                the modern world.
+              </p>
+              <a href="#" class="read-more" data-modal="modal-abstract"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Modal Abstract -->
+          <div class="modal" id="modal-abstract">
+            <div class="modal-contents">
+              <span class="close">&times;</span>
+              <h2>The Beauty of Abstract Expressionism</h2>
+              <p class="blog-meta">
+                Published on April 10, 2025 • By Ella West
+              </p>
+              <div class="blog-article">
+                <p>
+                  Abstract Expressionism, emerging in the post-World War II era,
+                  wasn't just an art movement—it was a cultural rebellion.
+                  Artists like Jackson Pollock and Mark Rothko created with
+                  intensity, often prioritizing feeling over form. But how does
+                  this bold style continue to influence us today?
+                </p>
+
+                <p>
+                  In today’s chaotic digital age, abstract art remains a safe
+                  space for emotion. The undefined shapes and vivid color fields
+                  evoke raw feelings that structured realism can’t. Viewers are
+                  invited to bring their own meaning—making the experience
+                  deeply personal.
+                </p>
+
+                <blockquote>
+                  "It's not what you see that matters, it's what you feel." —
+                  Mark Rothko
+                </blockquote>
+
+                <p>
+                  Explore how modern creators are bringing abstract emotion into
+                  the digital and physical gallery spaces alike, reviving this
+                  timeless language of soul and spontaneity.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img
+              src="/Assets/images/meet ella pic.avif"
+              alt="Blog Image 2"
+            />
+            <div class="blog-content">
+              <h3>Meet the Artist: Ella West</h3>
+              <p>
+                Get to know Ella's journey from street art to prestigious
+                galleries.
+              </p>
+              <a href="#" class="read-more" data-modal="modal-ella"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Modal Ella -->
+          <div class="modal" id="modal-ella">
+            <div class="modal-contents">
+              <span class="close">&times;</span>
+              <h1>Meet the Artist: Ella West</h1>
+              <p class="blog-meta">
+                Published on March 28, 2025 • By Art Insights Team
+              </p>
+              <div class="blog-article">
+                <p>
+                  From painting murals in alleyways to exhibiting at
+                  international galleries, Ella West’s journey is a testament to
+                  artistic grit. Her story is not just one of talent—but
+                  relentless evolution.
+                </p>
+
+                <p>
+                  Ella began by experimenting with spray paint and chalk. Her
+                  work, often rooted in urban symbolism, quickly attracted the
+                  attention of local curators. But her true breakout came when
+                  she blended classical technique with street art motifs.
+                </p>
+
+                <blockquote>
+                  "Art isn’t just where you hang it. It’s where you live it." —
+                  Ella West
+                </blockquote>
+
+                <p>
+                  Today, Ella continues to explore themes of resilience,
+                  identity, and modern femininity through layered textures and
+                  bold palettes. Her latest exhibit, *Concrete Bloom*, pushes
+                  her boundaries even further.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="/Assets/images/culture art.avif" alt="Blog Image 4" />
+            <div class="blog-content">
+              <h3>The Role of Culture in Modern Art</h3>
+              <p>
+                Dive into how heritage, tradition, and modern culture collide in
+                today's art.
+              </p>
+              <a href="#" class="read-more" data-modal="modal-culture"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Modal Culture -->
+          <div class="modal" id="modal-culture">
+            <div class="modal-contents">
+              <span class="close">&times;</span>
+              <h1>The Role of Culture in Modern Art</h1>
+              <p class="blog-meta">
+                Published on March 5, 2025 • By Culture & Canvas
+              </p>
+              <div class="blog-article">
+                <p>
+                  Modern art is not created in a vacuum—it reflects the stories,
+                  struggles, and identities of those behind the brush. Culture
+                  acts as both canvas and color, shaping the message and the
+                  medium.
+                </p>
+
+                <p>
+                  From African textile motifs influencing global fashion, to
+                  Indigenous line work appearing in contemporary murals, culture
+                  is deeply embedded in today's art practices.
+                </p>
+
+                <blockquote>
+                  "Culture doesn’t just inspire—it informs." — Anika Boho,
+                  Visual Anthropologist
+                </blockquote>
+                <p>
+                  As artists navigate the global stage, honoring heritage while
+                  innovating is both a challenge and an opportunity. This
+                  tension births powerful work—art that speaks across
+                  generations and geographies.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img src="/Assets/images/art.avif" alt="Blog Image 3" />
+            <div class="blog-content">
+              <h3>5 Art Trends to Watch in 2025</h3>
+              <p>
+                From AI-assisted painting to immersive installations—what's next
+                in art?
+              </p>
+              <a href="#" class="read-more" data-modal="modal-trends"
+                >Read More</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Modal Trends -->
+          <div class="modal" id="modal-trends">
+            <div class="modal-contents">
+              <span class="close">&times;</span>
+              <h1>5 Art Trends to Watch in 2025</h1>
+              <p class="blog-meta">
+                Published on April 2, 2025 • By wELLs Trend & Texture
+              </p>
+              <div class="blog-article">
+                <p>
+                  As technology and creativity collide, the art world is
+                  undergoing another thrilling shift. Here are five emerging
+                  trends that artists, curators, and collectors are watching in
+                  2025.
+                </p>
+
+                <ul>
+                  <li>
+                    <strong>1. AI-Assisted Painting:</strong> Artists are
+                    collaborating with algorithms to generate unexpected
+                    textures and patterns.
+                  </li>
+                  <li>
+                    <strong>2. Virtual Reality Installations:</strong>
+                    Immersive, walk-through digital galleries are becoming a new
+                    norm.
+                  </li>
+                  <li>
+                    <strong>3. Eco Art:</strong> Sustainable materials and
+                    climate activism are shaping both form and message.
+                  </li>
+                  <li>
+                    <strong>4. Handcrafted Comeback:</strong> A resurgence in
+                    ceramics, weaving, and analog mediums offers contrast to
+                    digital saturation.
+                  </li>
+                  <li>
+                    <strong>5. Hyperlocal Storytelling:</strong> Artists are
+                    turning to their immediate communities for inspiration and
+                    impact.
+                  </li>
+                </ul>
+
+                <blockquote>
+                  "Culture doesn’t just inspire—it informs." — Anika Boho,
+                  Visual Anthropologist
+                </blockquote>
+
+                <p>
+                  Whether you're creating or collecting, these trends highlight
+                  how fluid and fast-moving creativity continues to be.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services-section" id="service">
+        <h2>Our Services</h2>
+        <div class="services-container">
+          <div class="service-card">
+            <h3>Custom Artwork</h3>
+            <p>
+              Commission personalized pieces tailored to your vision, from
+              digital art to hand-crafted sculptures.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Art Consultation</h3>
+            <p>
+              Need help curating a space? Our experts offer tailored advice on
+              artwork selection and placement.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Art Consultation</h3>
+            <p>
+              Need help curating a space? Our experts offer tailored advice on
+              artwork selection and placement.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Workshops & Events</h3>
+            <p>
+              Join us for art classes, live exhibitions, and community events
+              hosted in our creative space.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-box">
+          <div class="newsletter-contents">
+            <div class="newsletter-image">
+              <img
+                src="./Assets/images/pic pic.avif"
+                alt=""
+              />
+            </div>
+            <div class="container">
+              <h2>Stay in the Loop with New Art & Insights</h2>
+              <p>
+                Subscribe to my newsletter for exclusive previews,
+                behind-the-scenes process, and updates on upcoming exhibitions.
+              </p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+              </form>
+              <small>No spam, unsubscribe anytime.</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h3>Testimonials</h3>
+        <h2>What Our Clients Say</h2>
+        <div class="testimonials-box">
+          <div class="testimonials-contents">
+            <div class="testimonials-cards">
+              <div class="img-box">
+                <img src="./Assets/images/photo1.avif" alt="" />
+              </div>
+              <h4>Samson Badejo</h4>
+              <h5>CEO AT SB-MEDIA</h5>
+              <p class="comment">
+                “This is my third commission from <b>wELLs</b>, and each time
+                I’m blown away. The consistency in quality, creativity, and
+                professionalism is why I keep coming back.”
+              </p>
+              <div class="t-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials-contents">
+            <div class="testimonials-cards">
+              <div class="img-box">
+                <img src="./Assets/images/photo3.avif" alt="" />
+              </div>
+              <h4>Amanda Wells</h4>
+              <h5>CEO AT TECH-BYTE</h5>
+              <p class="comment">
+                “Every piece from <b>wELLs</b> tells a story. The artwork I
+                received became an instant conversation starter in my office.
+                It’s not just art, it’s emotion captured on canvas.”
+              </p>
+              <div class="t-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials-contents">
+            <div class="testimonials-cards">
+              <div class="img-box">
+                <img src="./Assets/images/photo2.avif" alt="" />
+              </div>
+              <h4>Raey Ramos</h4>
+              <h5>CEO AT RR-CLASSICWEARS</h5>
+              <p class="comment">
+                “We were honored to showcase <b>wELLs</b> work in our gallery.
+                The response from visitors was overwhelming. Their technique,
+                vision, and depth are on a level you rarely see.”
+              </p>
+              <div class="t-icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2>Let’s Connect</h2>
+          <p class="intro">
+            My art is a reflection of emotion, rhythm, and story — and I'd love
+            to share it with you. Whether you're a collector, curator, fellow
+            creative, or someone who simply resonates with what I create —
+            you're welcome here.
+          </p>
+
+          <div class="socials">
+            <p>Follow us or reach out via:</p>
+            <div class="icons">
+              <a href="#" aria-label="Instagram"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" aria-label="facebook">
+                <ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="#" aria-label="twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+              <a href="location.html" class="map-link">
+                <ion-icon name="pin"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <input type="text" name="name" placeholder="Your name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <h3>Harrison Wells</h3>
+            <p>
+              A visual portfolio and journal of original art, creative process,
+              and personal inspiration. Created with care and shared with the
+              world.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Address</h4>
+            <ul>
+              <li>123 Copper Rd, Ikoyi Lagos Island, Nigeria</li>
+              <li>
+                <a href="mailto:you@example.com"
+                  ><u>harrysticks75@gmail.com</u></a
+                >
+              </li>
+              <li>
+                <a href="tel:+1234567890"><u>+234 9064 89 4870</u></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="Quick-Links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Follow Us On:</h4>
+            <div class="footer-socials">
+              <div class="icons">
+                <a href="#" aria-label="Instagram"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+                <a href="#" aria-label="facebook">
+                  <ion-icon name="logo-facebook"></ion-icon
+                ></a>
+                <a href="#" aria-label="twitter">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#" aria-label="linkedin"
+                  ><ion-icon name="logo-linkedin"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+          <p>&copy; 2025 Harrison Wells. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
