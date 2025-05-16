@@ -108,3 +108,25 @@ window.addEventListener("click", function (e) {
 //     reset: true,
 //   });
 // });
+
+const networkLoader = document.getElementById("network-loader");
+
+// Show loader if offline
+function handleOffline() {
+  networkLoader.style.display = "flex";
+}
+
+// Hide loader when back online
+function handleOnline() {
+  networkLoader.style.display = "none";
+}
+
+// Initial check
+if (!navigator.onLine) {
+  handleOffline();
+}
+
+// Event listeners
+window.addEventListener("offline", handleOffline);
+window.addEventListener("online", handleOnline);
+
