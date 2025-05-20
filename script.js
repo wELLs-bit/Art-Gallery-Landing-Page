@@ -19,6 +19,9 @@ const galleries = {
     "./Assets/images/sculpture 4.avif",
     "./Assets/images/sculpture 5.avif",
     "./Assets/images/sculpture 6.avif",
+    "./Assets/images/sculpture 6.avif",
+    "./Assets/images/sculpture 6.avif",
+    "./Assets/images/sculpture 6.avif",
   ],
   collage: [
     "./Assets/images/adrianna-geo-1rBg5YSi00c-unsplash.jpg",
@@ -27,6 +30,9 @@ const galleries = {
     "./Assets/images/collage 3.avif",
     "./Assets/images/collage 4.avif",
     "./Assets/images/collage 5.avif",
+    "./Assets/images/collage 5.avif",
+    "./Assets/images/collage 5.avif",
+    "./Assets/images/collage 5.avif",
   ],
   digital: [
     "./Assets/images/digital art 1.avif",
@@ -34,6 +40,9 @@ const galleries = {
     "./Assets/images/digital art3.avif",
     "./Assets/images/digital art 4.avif",
     "./Assets/images/digital art 5.avif",
+    "./Assets/images/digital art 6.avif",
+    "./Assets/images/digital art 6.avif",
+    "./Assets/images/digital art 6.avif",
     "./Assets/images/digital art 6.avif",
   ],
 };
