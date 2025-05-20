@@ -89,8 +89,9 @@
 }
 
 .contact-form button:hover {
-  background-color: #6b438f;
-  color: black;
+  background-color: black;
+  color: #d8d8f6;
+
 }
 
 @media (max-width: 480px) {

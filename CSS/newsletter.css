@@ -55,7 +55,7 @@
 .newsletter-form button {
   padding: 12px 15px;
   background-color: rgb(58, 5, 58);
-  color: #fff;
+  color: #d8d8f6;
   border: none;
   border-radius: 6px;
   font-size: 1rem;
@@ -64,7 +64,7 @@
 }
 
 .newsletter-form button:hover {
-  background-color: #6b438f;
+  background-color: black;
 }
 
 .newsletter small {

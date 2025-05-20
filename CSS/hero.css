@@ -111,12 +111,13 @@
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  background: transparent;
+  background-color: rgb(58, 5, 58);
+  color: #d8d8f6;
   border: 1px solid black;
   transition: all ease-in-out 0.3s;
 }
 .hero-desc .hero-btn button:hover {
-  background-color: rgb(58, 5, 58);
+  background-color: black;
   color: #d8d8f6;
   border: 1px solid black;
 }
