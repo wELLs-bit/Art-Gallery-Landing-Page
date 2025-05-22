@@ -45,6 +45,13 @@ const galleries = {
     "./Assets/images/digital art 6.avif",
     "./Assets/images/digital art 6.avif",
   ],
+  portrait: [
+    "./Assets/images/albert-dera-ILip77SbmOE-unsplash.jpg",
+    "./Assets/images/victor-g-wN9DU73b8_s-unsplash.jpg",
+    "./Assets/images/albert-dera-ILip77SbmOE-unsplash.jpg",
+    "./Assets/images/albert-dera-ILip77SbmOE-unsplash.jpg",
+    "./Assets/images/albert-dera-ILip77SbmOE-unsplash.jpg",
+  ],
 };
 
 // Open modal and display gallery

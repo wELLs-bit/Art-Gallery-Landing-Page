@@ -244,3 +244,47 @@ header .logo span:hover {
     gap: 20px;
   }
 }
+
+@media (max-width: 1024px) {
+  .nav-button {
+    display: none;
+  }
+  nav ul li a,
+  nav ul li a::after {
+    color: white;
+  }
+
+  .menuopen {
+    display: flex;
+  }
+
+  nav.nav-menu.active,
+  .nav-button.active {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-500px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    flex-direction: column;
+  }
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}

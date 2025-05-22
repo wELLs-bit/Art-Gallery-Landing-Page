@@ -94,3 +94,10 @@
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 1024px)
+{
+  .newsletter-contents {
+    flex-direction: column;
+  }
+}
